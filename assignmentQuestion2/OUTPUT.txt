@@ -1,0 +1,129 @@
+Loading List size 2
+Select Option-
+1. Add User details
+2. Display User details
+3. Delete User details
+4. Save User details
+5. Exit
+2
+-------------------------------------------------------------------------------------------
+Name			 Roll Number			 Age			 Address 			 Courses
+-------------------------------------------------------------------------------------------
+Abhishek Sahu		45					12				BTM			A,B,D,F
+
+Sejal Sakshi		21					22				BTM			C,D,E,F
+
+Select Option-
+1. Add User details
+2. Display User details
+3. Delete User details
+4. Save User details
+5. Exit
+1
+Enter User details
+Enter Full Name
+Kailash Kher
+Enter Age
+25
+Enter Address
+ITPL
+Enter Roll no
+56
+Select courses to enroll [A,B,C,D,E,F]
+A,B,F,E
+ABFE
+Select Option-
+1. Add User details
+2. Display User details
+3. Delete User details
+4. Save User details
+5. Exit
+2
+-------------------------------------------------------------------------------------------
+Name			 Roll Number			 Age			 Address 			 Courses
+-------------------------------------------------------------------------------------------
+Abhishek Sahu		45					12				BTM			A,B,D,F
+
+Kailash Kher		56					25				ITPL			A,B,F,E
+
+Sejal Sakshi		21					22				BTM			C,D,E,F
+
+Select Option-
+1. Add User details
+2. Display User details
+3. Delete User details
+4. Save User details
+5. Exit
+4
+Saving List size = 3
+Select Option-
+1. Add User details
+2. Display User details
+3. Delete User details
+4. Save User details
+5. Exit
+3
+Enter roll number to delete user
+21
+Deleted Question2.Solution2 at position : 2
+Select Option-
+1. Add User details
+2. Display User details
+3. Delete User details
+4. Save User details
+5. Exit
+2
+-------------------------------------------------------------------------------------------
+Name			 Roll Number			 Age			 Address 			 Courses
+-------------------------------------------------------------------------------------------
+Abhishek Sahu		45					12				BTM			A,B,D,F
+
+Kailash Kher		56					25				ITPL			A,B,F,E
+
+Select Option-
+1. Add User details
+2. Display User details
+3. Delete User details
+4. Save User details
+5. Exit
+1
+Enter User details
+Enter Full Name
+Sukanya Kumari
+Enter Age
+22
+Enter Address
+Jayanagar
+Enter Roll no
+13
+Select courses to enroll [A,B,C,D,E,F]
+A,B,D,F
+ABDF
+Select Option-
+1. Add User details
+2. Display User details
+3. Delete User details
+4. Save User details
+5. Exit
+2
+-------------------------------------------------------------------------------------------
+Name			 Roll Number			 Age			 Address 			 Courses
+-------------------------------------------------------------------------------------------
+Abhishek Sahu		45					12				BTM			A,B,D,F
+
+Kailash Kher		56					25				ITPL			A,B,F,E
+
+Sukanya Kumari		13					22				Jayanagar			A,B,D,F
+
+Select Option-
+1. Add User details
+2. Display User details
+3. Delete User details
+4. Save User details
+5. Exit
+5
+Do you want to save latest changes (y/n)
+y
+Saving List size = 3
+
+Process finished with exit code 0
