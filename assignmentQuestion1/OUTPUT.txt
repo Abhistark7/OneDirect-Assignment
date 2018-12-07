@@ -1,0 +1,37 @@
+>java Solution1 -name dettol -price 45 -type manufactured
+
+Item quantity not entered, skipping
+Do you want to enter details of any other item (y/n)
+y
+Enter new item details
+-name painkiller -type raw -price 55 -quantity 6
+Do you want to enter details of any other item (y/n)
+y
+Enter new item details
+-name Balm -type imported -price 44
+Item quantity not entered, skipping
+Do you want to enter details of any other item (y/n)
+n
+
+Item Name is dettol
+Item Price is 45
+Tax per item is 6.6375
+Final Price is 51.6375
+
+---------------------------------------------------------------------------- 
+
+
+Item Name is painkiller
+Item Price is 55
+Tax per item is 6.6375
+Final Price is 51.6375
+
+---------------------------------------------------------------------------- 
+
+
+Item Name is Balm
+Item Price is 44
+Tax per item is 6.6375
+Final Price is 51.6375
+
+---------------------------------------------------------------------------- 
