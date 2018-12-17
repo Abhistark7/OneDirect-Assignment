@@ -10,9 +10,15 @@ Real Life Scenario:
 Producer consumer mechanism.
  
 Key Points:
+
 Please make sure your database is setup and you are able to access it before starting with implementation of this assignment.
+
 Use Java’s multithreading support for implementation.
+
 Proper validation / info messages should be thrown on console where ever required.
+
 Do appropriate exception handling where ever required.
+
 Where ever required please write comments in the code to make it more understandable.
+
 TDD methodology should be used
