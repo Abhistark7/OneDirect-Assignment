@@ -22,7 +22,7 @@ public class Solution4 implements Runnable{
     @Override
     public void run(){
 
-        //Thread1 which requests and stores the data from database into synchronizes list
+        //Thread1 which requests and stores the data from database into synchronized list
         synchronized (itemList){
         itemList = ConnectionConfiguration.getConnection();
         }
