@@ -1,13 +1,7 @@
-# Spring Security Login Tutorial
+# Assignment 5
 
-Tutorial / Full Information
-https://medium.com/@gustavo.ponce.ch/spring-boot-spring-mvc-spring-security-mysql-a5d8545d837d
+Steps To Run:-
 
-1. mvn clean
-2. mvn clean install
-3. Go to the target folder
-4. java -jar login-0.0.1-SNAPSHOT.jar
-
-
-- http://localhost:8080/registration
-- http://localhost:8080/login
+1. Import login.sql to your MySql Dtabase
+2. Run Solution5
+3. Visit http://localhost:8080/registration in your browser
