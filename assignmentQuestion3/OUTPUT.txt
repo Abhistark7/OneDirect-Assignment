@@ -1,0 +1,225 @@
+
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+8
+Enter node id
+1
+Enter node value
+a
+Node with id 1 and value a added!
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+8
+Enter node id
+2
+Enter node value
+b
+Node with id 2 and value b added!
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+8
+Enter node id
+3
+Enter node value
+c
+Node with id 3 and value c added!
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+7
+Enter parent node id
+1
+Enter child node id
+2
+Dependency added!
+Parent nodeID = 1 Child nodeID = 2
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+7
+Enter parent node id
+2
+Enter child node id
+3
+Dependency added!
+Parent nodeID = 2 Child nodeID = 3
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+1
+Enter node id
+2
+Parent nodes are :-
+Node id -> 1
+Node value -> a
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+2
+Enter node id
+1
+Children nodes are :-
+Node id -> 2
+Node value -> b
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+3
+Enter node id
+3
+Ancestor nodes are :-
+Node id -> 2
+Node value -> b
+Node id -> 1
+Node value -> a
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+4
+Enter node id
+1
+Descendant nodes are :-
+Node id -> 2
+Node value -> b
+Node id -> 3
+Node value -> c
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+5
+Enter parent node id
+2
+Enter child node id
+3
+Dependency removed!
+Parent nodeID = 2 Child nodeID = 3
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+3
+Enter node id
+1
+Ancestor nodes are :-
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+4
+Enter node id
+1
+Descendant nodes are :-
+Node id -> 2
+Node value -> b
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+6
+Enter nodeId to delete
+1
+Node deleted!
+Select Options -
+1. Get immediate parent of a node
+2. Get immediate children of a node
+3. Get ancestors of a node
+4. Get descendants of a node
+5. Delete dependency from tree
+6. Delete a node from tree
+7. Add dependency to tree
+8. Add new node to tree
+9. Exit
+9
+
+Process finished with exit code 0
