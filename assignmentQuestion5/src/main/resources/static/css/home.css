@@ -1,5 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 .admin-message-text {
     font-style: normal;
     font-size: 22px;
     color: #004080;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+
+}
+
+::placeholder {
+   color:    #BDBDBD;
+    font-weight: 400;
+}
+
+.header {
+   position:relative;
+   background-color: #0077FF;
+   height: 50px;
+   padding: 0px;
+   margin-top: 0px;
+   box-shadow: 0px 1px 20px #888888;
+   text-align: center;
+
+}
+
+.odlogo {
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    left:30px;
+}
+
+.login_btn {
+background-color: #4285F4;
+    font-family: Montserrat;
+    position:absolute;
+    border: none;
+    font-weight: 500;
+    color: white;
+    background-color: Transparent;
+        top:0;
+        bottom:0;
+        margin:auto;
+        right:30px;
+        font-size: 22px;
+}
+
+.register_heading {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 700;
+    position: absolute;
+    left:45%;
+    top: 10px;
+    height: 50%;
+    font-size: 24px;
+    vertical-align: middle;
+
+}
+
+
+.user{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #0077FF;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px;
+}
+
+.container{
+    padding: 0px;
+    width: 100%;
 }
