@@ -6,26 +6,25 @@ Design a Data Structure using Java’s Collection Framework that represents a de
 Dependency Graph is an acyclic multi root directional graph with the exception of a root node,
 which has no parents.
  
-Real Life Scenario:
+## Real Life Scenario:
 Family Tree 
 Terminology used:
 Parent: For edge A-&gt;B, A is a parent of B. There may be multiple parents for a child.
 Child: For edge A-&gt;B, B is a child of A. There may be multiple children of a parent.
 Ancestor: parent or grand-parent or grand-grand-parent and so on
 Descendant: child or grand-child or grand-grand-child and so on
- 
 Basically, the data structure should allow, you to store the parent child relationship and this can
 go to the nth level.
  
 
-Design:
+## Design:
 The node information, which we will store, is:
 Node Id --- This has to be unique.
 Node Name. Need not be distinct.
 Additional Information --- In the form of a key value pairs and this can be different for each
 node.
  
-Operations:
+## Operations:
 Get the immediate parents of a node, passing the node id as input parameter.
 Get the immediate children of a node, passing the node id as input parameter.
 Get the ancestors of a node, passing the node id as input parameter.
