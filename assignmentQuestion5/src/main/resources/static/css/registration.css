@@ -1,0 +1,240 @@
+.validation-message {
+    font-style: normal;
+    font-size: 12px;
+    color: #FF1C19;
+    font-family: Montserrat;
+    font-weight:400;
+    position: absolute;
+    padding-top:20px;
+    padding-bottom:10px;
+    left:27.5%;
+
+}
+
+::placeholder {
+   color:    #BDBDBD;
+    font-weight: 400;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+
+}
+
+
+.header {
+   position:relative;
+   background-color: #0077FF;
+   height: 50px;
+   padding: 0px;
+   margin-top: 0px;
+   box-shadow: 0px 1px 20px #888888;
+   text-align: center;
+
+}
+
+.odlogo {
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    left:30px;
+}
+
+.login_btn {
+background-color: #4285F4;
+    font-family: Montserrat;
+    position:absolute;
+    border: none;
+    font-weight: 500;
+    color: white;
+    background-color: Transparent;
+        top:0;
+        bottom:0;
+        margin:auto;
+        right:30px;
+        font-size: 22px;
+}
+
+.register_heading {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 700;
+    position: absolute;
+    left:45.5%;
+    top: 10px;
+    height: 50%;
+    font-size: 24px;
+    vertical-align: middle;
+
+}
+
+.adduser{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding : 50px;
+}
+
+.first_name_text {
+    text-align: left;
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #000000;
+    font-size: 18px;
+    padding-left: 40px;
+    float: left;
+}
+
+.enter_first_name {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-top: 80px;
+    height: 60px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 2px 5px #b9b9b9;
+}
+
+.first_name_val {
+    text-align: center;
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #0077FF;
+    font-size: 18px;
+    float: right;
+}
+
+.enter_last_name {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-top: 40px;
+    height: 60px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 2px 5px #b9b9b9;
+}
+
+.last_name_text {
+    text-align: left;
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #000000;
+    font-size: 18px;
+    padding-left: 40px;
+    float: left;
+}
+
+.last_name_val {
+    text-align: center;
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #0077FF;
+    font-size: 18px;
+    float: right;
+}
+
+.enter_number {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-top: 40px;
+    height: 60px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 2px 5px #b9b9b9;
+}
+
+.number_text {
+    text-align: left;
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #000000;
+    font-size: 18px;
+    padding-left: 40px;
+    float: left;
+}
+
+.number_val {
+    text-align: center;
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #0077FF;
+    font-size: 18px;
+    float: right;
+}
+
+.enter_password {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-top: 40px;
+    height: 60px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 2px 5px #b9b9b9;
+}
+
+.password_text {
+    text-align: left;
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color:l #000000;
+    font-size: 18px;
+    padding-left: 40px;
+    float: left;
+}
+
+.password_val {
+    text-align: center;
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #0077FF;
+    font-size: 18px;
+    float: right;
+}
+
+.reg_btn {
+  background-color: #0077FF;
+  border: none;
+  color: white;
+  width: 200px;
+  font-family: Montserrat;
+  font-weight: 500;
+  padding: 15px 32px;
+    box-shadow: 0px 1px 10px #888888;
+  margin-top: 60px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 16px;
+}
+
+.text-success{
+
+    padding: 10px;
+    display: block;
+    position: absolute;
+        left:41.5%;
+        top: 220px;
+        height: 50%;
+    color: #0077FF;
+    font-family:Montserrat;
+    font-weight:500;
+
+}

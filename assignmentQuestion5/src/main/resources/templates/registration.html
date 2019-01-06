@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/registration.css}"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="header">
+
+    <img th:src="@{/images/onedirect-logo.png}" class="odlogo" width="160" height="18"/>
+
+    <h1 class="register_heading"> Register User</h1>
+
+    <form th:action="@{/}" method="get">
+        <button class="login_btn" type="Submit">Login</button>
+    </form>
+
+</div>
+
+
+<div class="container">
+    <img th:src="@{/images/add_user_icon.png}" class="adduser" width="100" height="100" alt="Logo"/>
+    <h2 class="text-success" th:utext="${successMessage}" ></h2>
+</div>
+
+    <form autocomplete="off" action="#" th:action="@{/registration}"
+          th:object="${user}" method="post" class="form-horizontal"
+          role="form">
+
+
+    <div class="enter_first_name">
+
+        <h2 class="first_name_text">First Name</h2>
+        <input type="text" th:field="*{name}" class="first_name_val" name="name" placeholder="Enter First Name"><br>
+
+    </div>
+
+
+    <div class="enter_last_name">
+
+        <h2 class="last_name_text">Last Name</h2>
+        <input type="text" th:field="*{lastName}" class="last_name_val" name="name" placeholder="Enter Last Name"><br>
+
+    </div>
+
+
+    <div class="enter_number">
+
+        <h2 class="number_text">Phone Number</h2>
+        <input type="text" th:field="*{email}" class="number_val" name="name" placeholder="Enter Number"><br>
+
+    </div>
+
+
+    <div class="enter_password">
+
+        <h2 class="password_text">Password</h2>
+        <input type="password" th:field="*{password}" class="password_val" name="name" placeholder="Enter Password"><br>
+
+    </div>
+
+    <div class="register_button">
+        <input type="submit" class="reg_btn" value="Register">
+    </div>
+
+    </form>
+
+</body>
+</html>
