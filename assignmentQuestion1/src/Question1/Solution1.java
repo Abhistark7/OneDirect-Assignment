@@ -10,15 +10,7 @@ import java.util.*;
 
 public class Solution1 {
 
-    static List<String> item_names = new ArrayList<String>();
-    static List<String> item_types = new ArrayList<String>();
-    static List<Integer> item_prices = new ArrayList<Integer>();
-    static List<Integer> item_quantity = new ArrayList<Integer>();
-    static List<Double> sales_tax = new ArrayList<Double>();
-    static List<Double> final_price = new ArrayList<Double>();
-
-    //store index of last item, used to get last item in ArrayList
-    static int last_item_index = 0;
+    private static List<Item> ItemList = new ArrayList<>();
 
     public static void main(String[] args){
 
@@ -60,12 +52,12 @@ public class Solution1 {
         } while(choice == 'y');
 
         //Display all item details
-        for (int j=0; j<item_names.size(); j++) {
+        for (int j=0; j<ItemList.size(); j++) {
 
-            System.out.println("\nItem Name is "+ item_names.get(j));
-            System.out.println("Item Price is "+ item_prices.get(j));
-            System.out.println("Tax per item is "+ sales_tax.get(j));
-            System.out.println("Final Price is "+ final_price.get(j));
+            System.out.println("\nItem Name is "+ ItemList.get(j).getName());
+            System.out.println("Item Price is "+ ItemList.get(j).getPrice());
+            System.out.println("Tax per item is "+ ItemList.get(j).getTax());
+            System.out.println("Final Price is "+ ItemList.get(j).getFinalPrice());
             System.out.println("\n---------------------------------------------------------------------------- \n");
 
         }
@@ -146,43 +138,8 @@ public class Solution1 {
         //check and insert values
         checkValues(currentName, currentPrice, currentQuantity, currentType, name, price, quantity, type);
 
-        //Calculate sales tax and final price
-        sales_tax.add(calculate_tax(item_types.get(last_item_index), item_prices.get(last_item_index)));
-        final_price.add(sales_tax.get(last_item_index)+item_prices.get(last_item_index));
-
     }
 
-    //function to calculate tax
-    public static double calculate_tax(String type, int price) {
-
-        double tax = 0.0;
-        double surcharge = 0.0;
-        double final_price = 0.0;
-
-        switch(type){
-
-            case "raw" : tax = price*0.125;
-                break;
-
-            case "manufactured" : tax = price*0.125 + 0.02*(price + price*0.125);
-                break;
-
-            case "imported" : tax = price*0.1;
-                final_price = price + tax;
-                if(final_price<=100){
-                    surcharge = 5;
-                } else if(final_price>100 && final_price<=200) {
-                    surcharge = 10;
-                } else if(final_price>200){
-                    surcharge = final_price*1.1;
-                }
-                tax = tax + surcharge;
-
-        }
-
-        return tax;
-
-    }
 
     //method to check whether entered item type is correct or not
     public static boolean correctItemType(String type) {
@@ -200,7 +157,7 @@ public class Solution1 {
         //check for attributes which are not entered
         if(!name){
             System.out.println("Item name is mandatory!");
-            //System.exit(0);
+            System.exit(0);
         }
         if(!price){
             System.out.println("Item price not entered, skipping");
@@ -222,12 +179,18 @@ public class Solution1 {
     //method to input values
     public static void insertValues(String currentName, int currentPrice, int currentQuantity, String currentType){
 
+        TaxCalculator taxCalculator = new TaxCalculator();
         if(currentName != null)
         {
-        item_names.add(currentName);
-        item_prices.add(currentPrice);
-        item_quantity.add(currentQuantity);
-        item_types.add(currentType);
+        Item item = new Item();
+        item.setName(currentName);
+        item.setPrice(currentPrice);
+        item.setQuantity(currentQuantity);
+        item.setType(currentType);
+        item.setTax(taxCalculator.calculate_tax(currentType,currentPrice));
+        //final price = price + tax
+        item.setFinalPrice(Double.valueOf(currentPrice)+item.getTax());
+        ItemList.add(item);
         }
 
     }

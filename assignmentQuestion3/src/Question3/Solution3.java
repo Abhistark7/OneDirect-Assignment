@@ -5,7 +5,10 @@ package Question3;
  * @author Abhishek Sahu
  */
 
+import jdk.dynalink.NamedOperation;
+
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 public class Solution3
@@ -239,9 +242,15 @@ public class Solution3
             System.out.println("Invalid nodeID");
         } else {
 
-            childNode.addParent(parentNode);
-            parentNode.addChildren(childNode);
-            System.out.println("Dependency added!\n" + "Parent nodeID = " + parentNode.getNodeId() + " Child nodeID = " + childNode.getNodeId());
+            //check for cyclic dependency
+            Boolean isCyclic = checkCyclic(childNode, parentNode);
+            if (!isCyclic) {
+                childNode.addParent(parentNode);
+                parentNode.addChildren(childNode);
+                System.out.println("Dependency added!\n" + "Parent nodeID = " + parentNode.getNodeId() + " Child nodeID = " + childNode.getNodeId());
+            } else {
+                System.out.println("Cyclic Dependency detected!");
+            }
         }
     }
 
@@ -255,6 +264,38 @@ public class Solution3
 
         DAG.createNode(nodeId, nodeVal);
         System.out.println("Node with id "+ nodeId+ " and value "+nodeVal+" added!");
+    }
+
+    static boolean checkCyclic(Node childNode, Node parentNode){
+
+        //check if child node is already a descendant of parent node
+        LinkedHashSet<Node> allAncestors = new LinkedHashSet<>();
+        DAG dag = new DAG();
+        dag.getAncestors(childNode);
+        allAncestors = dag.getAllAncestors();
+        if(allAncestors!=null) {
+            if (allAncestors.contains(parentNode)) {
+                System.out.println("parent already an ancestor");
+                return true;
+            } else {
+                //check if child node is already a ancestor of parent node
+                LinkedHashSet<Node> allDescendants = new LinkedHashSet<>();
+                DAG dag1 = new DAG();
+                dag1.getDescendants(childNode);
+                allDescendants = dag1.getAllDescendants();
+                if(allDescendants!=null) {
+                    if (allDescendants.contains(parentNode)) {
+                        System.out.println("parent already a descendant");
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        return false;
+
     }
 
 }

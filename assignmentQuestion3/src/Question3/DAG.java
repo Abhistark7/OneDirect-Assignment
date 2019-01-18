@@ -14,6 +14,9 @@ import java.util.LinkedHashSet;
 public class DAG
 {
     static ArrayList<Node> allnodes = new ArrayList<>() ;
+    static LinkedHashSet<Node> allAncestors = new LinkedHashSet<>();
+    static LinkedHashSet<Node> allDescendants = new LinkedHashSet<>();
+
 
     static Node createNode(int id , String value )
     {
@@ -89,6 +92,12 @@ public class DAG
 
         for (Node curNode : parent) {
             System.out.println(curNode);
+            try{
+            allAncestors.add(curNode);}
+            catch (NullPointerException e){
+                System.out.println("Error catched!");
+
+            }
             //get ancestors of current node
             getAncestors(curNode);
         }
@@ -103,10 +112,22 @@ public class DAG
 
         for (Node curNode : children) {
             System.out.println(curNode);
+            try{
+                allDescendants.add(curNode);}
+            catch (NullPointerException e){
+                System.out.println("Error catched!");
+
+            }
             //get descendants of current node
             getDescendants(curNode);
 
         }
     }
+
+    LinkedHashSet<Node> getAllAncestors(){
+        return allAncestors;
+    }
+
+    LinkedHashSet<Node> getAllDescendants() { return  allDescendants;}
 
 }

@@ -9,15 +9,11 @@
 </head>
 <body>
 <div class="header">
-
     <img th:src="@{/images/onedirect-logo.png}" class="odlogo" width="160" height="18"/>
-
-    <h1 class="register_heading"> Register User</h1>
-
+    <h1 class="register_heading"> Register Form</h1>
     <form th:action="@{/}" method="get">
         <button class="login_btn" type="Submit">Login</button>
     </form>
-
 </div>
 
 
@@ -31,41 +27,35 @@
           role="form">
 
     <div class="enter_first_name">
-
-        <h2 class="first_name_text">First Name</h2>
-        <input type="text" th:field="*{name}" class="first_name_val" name="name" placeholder="Enter First Name"><br>
-
+        <h2 class="first_name_text">Name</h2>
+        <input type="text" th:field="*{name}" class="first_name_val" name="name" placeholder="Enter Name"><br>
     </div>
 
-
-    <div class="enter_last_name">
-
-        <h2 class="last_name_text">Last Name</h2>
-        <input type="text" th:field="*{lastName}" class="last_name_val" name="name" placeholder="Enter Last Name"><br>
-
-    </div>
-
+        <div class="enter_last_name">
+            <h2 class="last_name_text">Last Name</h2>
+            <input type="text" th:field="*{lastName}" class="last_name_val" name="name" placeholder="Enter Last Name"><br>
+        </div>
 
     <div class="enter_number">
-
         <h2 class="number_text">Email</h2>
         <input type="text" th:field="*{email}" class="number_val" name="name" placeholder="Enter Email"><br>
-
     </div>
 
 
     <div class="enter_password">
-
         <h2 class="password_text">Password</h2>
         <input type="password" th:field="*{password}" class="password_val" name="name" placeholder="Enter Password"><br>
-
     </div>
+
+        <!-- Enter phone number from previous page -->
+        <input class="password" type="hidden" th:value="${userPhone}" id="number" name="number" /><br>
 
     <div class="register_button">
         <input type="submit" class="reg_btn" value="Register">
     </div>
 
     </form>
+
 
 </body>
 </html>
