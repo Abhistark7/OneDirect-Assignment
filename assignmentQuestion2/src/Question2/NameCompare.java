@@ -2,7 +2,7 @@ package Question2;
 
 import java.util.Comparator;
 
-//a class used for sorting according to name else roll no
+//class used for sorting according to name else roll no
 class NameCompare implements Comparator<student>
 {
 

@@ -4,47 +4,32 @@
 <html>
 
     <head> <title> Login Page</title>
-
     <link rel="stylesheet" type="text/css" th:href="@{/css/userLogin.css}"/>
-
     </head>
 
     <body>
-
     <div class="header">
-
         <img th:src="@{/images/onedirect-logo.png}" class="odlogo" width="160" height="18"/>
-
         <h1 class="register_heading"> Login Page</h1>
-
-        <form th:action="@{/registration}" method="get">
-            <button class="login_btn" type="Submit">Register</button>
+        <form th:action="@{/signup}" method="get">
+            <button class="login_btn" type="Submit">Sign Up</button>
         </form>
-
     </div>
 
     <div class="container">
-
         <img th:src="@{/images/user_login_icon.png}" class="adduser" width="100" height="100" alt="Logo">
-
     </div>
 
     <form th:action="@{/login}" method="POST" class="form-signin">
 
     <div class="enter_password">
-
         <h2 class="password_text">Email</h2>
-
         <input type="text" class="password_val" name="email" placeholder="Enter Email"><br>
-
     </div>
 
     <div class="enter_password">
-
         <h2 class="password_text">Password</h2>
-
         <input type="password" class="password_val" name="password" placeholder="Enter Password"><br>
-
     </div>
 
 

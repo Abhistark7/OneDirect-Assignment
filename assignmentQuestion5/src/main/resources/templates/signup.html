@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/signup.css}"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+
+<div class="header">
+    <img th:src="@{/images/onedirect-logo.png}" class="odlogo" width="160" height="18"/>
+    <h1 class="register_heading">Sign Up</h1>
+    <form th:action="@{/}" method="get">
+        <button class="login_btn" type="Submit">Login</button>
+    </form>
+</div>
+
+<div class="container">
+    <img th:src="@{/images/phone.svg}" class="adduser" width="100" height="100" alt="Logo"/>
+</div>
+
+<div>
+
+<form action="#" th:action="@{/signup}" th:object="${PhoneNumber}" method="post">
+
+    <div class="block">
+
+    <div class="enter_phone">
+        <h2 class="password_text">Phone Number</h2>
+        <input type="text" th:field="*{number}" class="password_val" name="email" placeholder="+91XXXXXXXXXX">
+        <div class="send_button">
+            <input type="Submit" class="send_btn" name="Submit" value="Send OTP">
+        </div>
+
+    </div>
+        <br/><h2><span class="otp-message-text" th:utext="${otpMessage}"></span></h2>
+    </div>
+
+    <div class="block">
+        <div class="enter_password">
+            <h2 class="password_text">OTP</h2>
+            <input type="text" th:field="*{OTP}" class="password_val" name="email" placeholder="Enter OTP">
+            <div class="verify_button">
+                <input type="Submit" class="verify_btn" name="Submit" value="Verify">
+            </div>
+        </div><br/>
+        <h2><span class="error-message-text" th:utext="${errorMessage}"></span></h2>
+    </div>
+
+</form>
+
+</div>
+
+</body>
+</html>

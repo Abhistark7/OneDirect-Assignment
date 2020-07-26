@@ -93,11 +93,11 @@ background-color: #4285F4;
 }
 
 .enter_first_name {
-    width: 900px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    margin-top: 80px;
+    margin-top: 60px;
     height: 60px;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0px 2px 5px #b9b9b9;
@@ -114,7 +114,7 @@ background-color: #4285F4;
 }
 
 .enter_last_name {
-    width: 900px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
@@ -146,7 +146,7 @@ background-color: #4285F4;
 }
 
 .enter_number {
-    width: 900px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
@@ -178,7 +178,7 @@ background-color: #4285F4;
 }
 
 .enter_password {
-    width: 900px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
@@ -209,6 +209,22 @@ background-color: #4285F4;
     float: right;
 }
 
+.otp_btn {
+  background-color: #0077FF;
+  border: none;
+  color: white;
+  width: 120px;
+  font-family: Montserrat;
+  font-weight: 500;
+  padding: 15px 20px;
+  box-shadow: 0px 1px 10px #888888;
+  border-radius: 4px;
+  font-size: 16px;
+  position: absolute;
+  top:615px;
+  right:450px;
+}
+
 .reg_btn {
   background-color: #0077FF;
   border: none;
@@ -222,6 +238,7 @@ background-color: #4285F4;
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom:100px;
   display: block;
   font-size: 16px;
 }

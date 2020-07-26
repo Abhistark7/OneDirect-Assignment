@@ -68,7 +68,7 @@ public class Solution2 {
 
     }
 
-    //method which adds new users
+    //method to adds new users
     static void addUser(){
         String  address, courseInput;
         int roll_no=0, age=0;
@@ -93,11 +93,14 @@ public class Solution2 {
             System.out.println("Invalid Roll no");
             exit(0);
         }
+
         System.out.println("Select courses to enroll [A,B,C,D,E,F]");
         courseInput = sc.nextLine();
         String newstr = courseInput.replaceAll("[^A-Za-z]+", "");
+
+        //Remove any duplicate courses entered
         newstr = removeDuplicateCharacter(newstr);
-        System.out.println(newstr);
+        System.out.println("Courses selected :- "+newstr);
         courses = newstr.toCharArray();
 
         // if courses are correct then enter the data
@@ -134,7 +137,7 @@ public class Solution2 {
     }
 
 
-    //method which deletes a user
+    //method to delete a user
     public static void deleteUser(){
 
         System.out.println("Enter roll number to delete user");
@@ -151,7 +154,7 @@ public class Solution2 {
 
             if(studentList.get(i).getRoll_no() == roll){
                 studentList.remove(i);
-                System.out.println("Deleted Question2.Solution2 at position : "+i);
+                System.out.println("Deleted user at position : "+i);
                 flag = true;
             }
         }
@@ -205,7 +208,7 @@ public class Solution2 {
 
     }
 
-    //exit method asking to save changes or not
+    //exit method prompting to save changes or not
     public static void runExit() {
 
         char choice = 'n';
@@ -245,7 +248,7 @@ public class Solution2 {
 
         if(courses.length!=4){
             res = false;
-            System.out.println("It is mandatory to select 4 courses!");
+            System.out.println("It is mandatory to select only 4 courses!");
         } else {
             for (int i = 0; i < 4; i++) {
                 if (courses[i] != 'A' && courses[i] != 'B' && courses[i] != 'C' && courses[i] != 'D' && courses[i] != 'E' && courses[i] != 'F') {
@@ -258,6 +261,7 @@ public class Solution2 {
         }
         return res;
     }
+
 
     //method to remove duplicate characters to avoid duplicate course entries
     static String removeDuplicateCharacter(String string){
